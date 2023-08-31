@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task 21
+        let num=10;
+        let str="KRATOS";
+        let bool=true;
+        let na=null;
+        let undef;
+        let obj={
+            name:"Tom Cruise",
+            age:60
+        }
+        console.log("Task 21");
+        console.log(num);
+        console.log(str);
+        console.log(bool);
+        console.log(na);
+        console.log(undef);
+        console.log(obj);
+        //task 22
+        console.log(typeof num);
+        console.log(typeof str);
+        console.log(typeof bool);
+        console.log(typeof na);
+        console.log(typeof undef);
+        console.log(typeof obj);
+        //task 23
+        let sym=Symbol("Carl Johnson");
+        console.log(typeof sym);
+        console.log(sym.description);
+        //task 24
+        let na1=null;
+        console.log(`the type of null is an : ${typeof(na1)}`);
+        //task 25
+        //using let keyword
+        for(let i=0;i<1;i++){
+        let var1="Life is a race"; 
+        var var2="Thunder";
+        console.log(var1);
+        console.log(var2);    
+    }
+    console.log(var1);//variable is not defined outside the block of code outside the loop
+    console.log(var2);   
+  
+</script>
+<script>
+    //task 26
+    let aa1="70";
+    let bb1=Number(a1);//explicit conversion
+    let exp=a1-b1;//implicit conversion
+    console.log(typeof exp);
+    console.log(typeof(aa1));
+    console.log(typeof(bb1));
+</script>
+<script>
+    //task 27
+    let bool1=true;
+    let strcon=String(bool1);
+    let strf="";//empty means false
+    let strt="anyvalue";//anyvalue present means true
+    let boolcon=Boolean(strf);
+    let boolcon2=Boolean(strt)
+    console.log(strcon);
+    console.log(boolcon);
+    console.log(boolcon2);
+</script>
+<script>
+    //task 28
+    let a1= 80;
+let b1=40;
+//arithmetic operations
+let add=a1+b1;
+let sub=a1-b1;
+let mul=a1*b1;
+let div=a1/b1;
+let mod=a1%b1;
+console.log("add :"+add);
+console.log("sub :"+sub);
+console.log("mul: "+mul);
+console.log("div: "+div);
+console.log("mod: "+mod);
+</script>
+<script>
+    //task 29
+    let x1=10;
+    let x2=20;
+    x1++;
+    x2--;
+    console.log(x1);
+    console.log(x2);
+    ++x1;
+    --x2;
+    console.log(x1);
+    console.log(x2);
+</script>
+<script>
+    //task 30
+    let pre=2+3-4*9/10;
+    console.log(pre);
+    //presedence: * / + -
+</script>
+</body>
+</html>
