@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //test
+        // var arr = [1,2,3,4,5];
+        // const mul1 = (num) =>(num+5); 
+        // const arr1=arr.map(mul1);
+        // console.log(arr1);
+    </script>
+    <script>
+        console.log("day 3");
+        //task 1
+        let arr1=[1,2,3,4,5];
+        let sq=n=>(n*n);
+        let res1=arr1.map((n)=>(n*n));
+        console.log(res1);
+
+        //task 2
+        let arr2=[1,2,3,4,5,6,7,8,9];
+        let even=arr2.filter(num=>num%2==0);
+        console.log(even);
+
+        //task 3
+        let arr3=[20,40,50,80];
+        let sum=arr3.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0);
+        console.log(sum);
+
+        //task 4
+        let arr4=["Vishwa","Vasu","Vinay","Jay"];
+        let len = st =>(st.length);
+        let res4 = arr4.map(len);
+        console.log(res4);
+
+        //task 5
+        let arr5=["John","Peter","Jack","Ethan"];
+        let res5=arr5.splice(2,1,"replaced");
+        console.log(arr5);
+
+        //task 6
+        let arr6=["Alone","Depressed","Sad","Leftout","Betrayed","Pain"];
+        let res6=arr6.slice(1,4);
+        console.log(res6);
+
+        //task 7
+        let arr7=["Carl","Albert","Amma","Vista","Jackie","America"];
+        let res7=arr7.filter(n=>n.toLowerCase().charAt(0)=='a');
+        console.log(res7);
+
+        //task 8
+        let score=[90,85,67,56];
+        let arrw=(n)=>{
+            if(n>=90 && n<=100)
+            {
+                return "A";
+            }
+            else if(n>=80 && n<=89)
+            {
+                return "B";
+            }
+            else{
+                return "C";
+            }
+        }
+        let res8=score.map(arrw);
+        console.log(res8);
+
+        //task 9
+        let ages=[70,60,49,21,18];
+        let res9=ages.reduce((a,b)=>a+b,0);
+        let res91=res9/ages.length;
+        console.log(res91);
+        
+        //task 10
+        let ar10=["Sun","Moon","Earth","Black Hole","Milky way"];
+        let res10=ar10.splice(2,2,"Interstellar","Asgard");
+        console.log(ar10);
+        
+</script>
+
+</body>
+</html>
