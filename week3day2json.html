@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // //Task 1 JSON and variable length arguments/spread syntax:
+// function add(){
+//     var sum=0;
+//     for(var i=0;i<arguments.length;i++){
+//       sum+=arguments[i];
+//     }
+//     return sum;
+// }
+// console.log(add(1,2,3,4,5));
+// console.log(add(1,2,3,4,5,6));
+// console.log(add(1,2,3,4,5,6,7));
+
+//Task 2
+//rest parameters
+    function sum(...args){
+            let sum=0;
+            for(let arg of args){
+                sum+=arg;
+            }
+            return sum;
+    }
+console.log(sum(1,2,3,4));
+console.log(sum(1,2,3));
+
+//spread syntax
+     arr1=[1,2,3,4,5];
+     arr2=[1,2];
+     function sums(){
+            let sum1=0;
+            for(let arg1 of arguments){
+                sum1+=arg1;
+            }        
+            return sum1;
+     }   
+console.log(sums(...arr1,...arr2,5,8));
+
+// task 3
+let obj={
+    name:"Vishwa",
+    age:20,
+    city:"New York"
+};
+obj.hobbies="Gaming";
+let json=JSON.stringify(obj);
+console.log(json);
+
+// task 4
+
+    let obj1={
+    name:"Vishwa",
+    age:20,
+    city:"New York"
+};
+
+let obj2={
+    name:"Carl",
+    age:30,
+    city:"San Andreas"
+};
+
+function merge(obj1,obj2){
+  let c={
+    ...obj1,
+    ...obj2
+  }
+  return c;
+}
+console.log(merge(obj1,obj2));
+// function merge(a,b){
+//   var c={
+//     ...a,
+//     ...b
+//   }
+//   return c;
+// }
+// var a={
+//   name:"Rishi",
+//   id:123
+// }
+// var b={
+//   manager:"danush",
+//   mId:124
+// }
+// console.log(Object.assign(a,b));
+// console.log(merge(a,b));
+
+//task 5
+
+let obj3={
+    title:"Jawan",
+    Director:"Atlee",
+    Music:"Aniruth"
+};
+let json1=JSON.stringify(obj3);
+console.log(json1);
+console.log(typeof(json1));
+let jsobj=JSON.parse(json1);
+console.log(jsobj);
+console.log(typeof(jsobj));
+
+</script>
+</body>
+</html>
